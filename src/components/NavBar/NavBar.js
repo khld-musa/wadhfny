@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 
 const TopBar = () => {
@@ -51,16 +52,16 @@ const TopBar = () => {
           </a>
         </li>
         <li className="nav__item" onClick={closeMobileMenu}>
-          <a href="/login" className="nav__link">
+          <Link to="/login" className="nav__link">
           <Button variant="" size="lg" className="loginbutton me-2">
             Log in
           </Button>
-          </a>
-          <a href="/register" className="nav__link">
+          </Link>
+          <Link to="/register" className="nav__link">
           <Button variant="" className="joinus shadow-lg" size="lg">
             Join Now
           </Button>
-          </a>
+          </Link>
         </li>
       </ul>
       <div onClick={navToggle} className={icon}>

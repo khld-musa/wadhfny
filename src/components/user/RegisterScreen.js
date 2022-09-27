@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const RegisterScreen = () => {
 
 
     return (
-        <body>
+        <body data-kt-name="metronic" id="kt_body" class="app-blank app-blank">
 
             {/* <MetaData title={'Register User'} /> */}
 
@@ -42,27 +43,27 @@ const RegisterScreen = () => {
                                         {/*begin::Col*/}
                                         <div className="col-md-6">
                                             {/*begin::Google link=*/}
-                                            <a
-                                                href="#"
-                                                className="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100"
+                                            <Link
+                                                to="#"
+                                                className="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-success bg-state-light flex-center text-nowrap w-100"
                                             >
                                                 <i class="fa-brands fa-google"></i>
                                                 Sign in with Google
-                                            </a>
+                                            </Link>
                                             {/*end::Google link=*/}
                                         </div>
                                         {/*end::Col*/}
                                         {/*begin::Col*/}
                                         <div className="col-md-6">
                                             {/*begin::Google link=*/}
-                                            <a
-                                                href="#"
-                                                className="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100"
+                                            <Link
+                                                to="#"
+                                                className="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-success bg-state-light flex-center text-nowrap w-100"
                                             >
 
                                                 <i class="fa-brands fa-apple "></i>
                                                 Sign in with Apple
-                                            </a>
+                                            </Link>
                                             {/*end::Google link=*/}
                                         </div>
                                         {/*end::Col*/}
@@ -110,7 +111,7 @@ const RegisterScreen = () => {
                                             </div>
                                             {/*end::Input wrapper*/}
                                             {/*begin::Meter*/}
-                                        
+
                                         </div>
                                         {/*end::Wrapper*/}
                                         {/*begin::Hint*/}
@@ -145,41 +146,34 @@ const RegisterScreen = () => {
                                             />
                                             <span className="form-check-label fw-semibold text-gray-700 fs-base ms-1">
                                                 I Accept the
-                                                <a href="#" className="ms-1 link-primary">
+                                                <Link to="#" className="ms-1 link-success">
                                                     Terms
-                                                </a>
+                                                </Link>
                                             </span>
                                         </label>
                                     </div>
                                     {/*end::Accept*/}
                                     {/*begin::Submit button*/}
-                                    <div className="d-grid mb-10">
-                                        <button
-                                            type="submit"
-                                            id="kt_sign_up_submit"
-                                            className="btn btn-primary"
+                                    <div className="d-grid mb-10 btn">
+
+                                        <Link
+                                            to="/"
+                                            className="text-light"
                                         >
-                                            {/*begin::Indicator label*/}
-                                            <span className="indicator-label">Sign up</span>
-                                            {/*end::Indicator label*/}
-                                            {/*begin::Indicator progress*/}
-                                            <span className="indicator-progress">
-                                                Please wait...
-                                                <span className="spinner-border spinner-border-sm align-middle ms-2" />
-                                            </span>
-                                            {/*end::Indicator progress*/}
-                                        </button>
+                                            Sign up
+                                        </Link>
+
                                     </div>
                                     {/*end::Submit button*/}
                                     {/*begin::Sign up*/}
                                     <div className="text-gray-500 text-center fw-semibold fs-6">
                                         Already have an Account?
-                                        <a
-                                            href="/login"
-                                            className="link-primary fw-semibold"
+                                        <Link
+                                            to="/login"
+                                            className="link-success fw-semibold"
                                         >
                                             Sign in
-                                        </a>
+                                        </Link>
                                     </div>
                                     {/*end::Sign up*/}
                                 </form>
@@ -191,28 +185,28 @@ const RegisterScreen = () => {
                         {/*begin::Footer*/}
                         <div className="d-flex flex-center flex-wrap px-5">
                             {/*begin::Links*/}
-                            <div className="d-flex fw-semibold text-primary fs-base">
-                                <a
-                                    href="../../demo1/dist/pages/team.html"
+                            <div className="d-flex fw-semibold text-success fs-base">
+                                <Link
+                                    to="#"
                                     className="px-5"
                                     target="_blank"
                                 >
                                     Terms
-                                </a>
-                                <a
-                                    href="../../demo1/dist/pages/pricing/column.html"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="px-5"
                                     target="_blank"
                                 >
                                     Plans
-                                </a>
-                                <a
-                                    href="../../demo1/dist/pages/contact.html"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="px-5"
                                     target="_blank"
                                 >
                                     Contact Us
-                                </a>
+                                </Link>
                             </div>
                             {/*end::Links*/}
                         </div>
@@ -220,7 +214,7 @@ const RegisterScreen = () => {
                     </div>
                     {/*end::Body*/}
                     {/*begin::Aside*/}
-              
+
                     {/*end::Aside*/}
                 </div>
                 {/*end::Authentication - Sign-up*/}

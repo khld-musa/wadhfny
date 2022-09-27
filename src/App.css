@@ -3,7 +3,7 @@ html,
 body {
   font-family: 'Amazon Ember';
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
@@ -13,38 +13,12 @@ body {
 }
 
 /* Avatar */
-.avatar {
-  display: inline-block;
-  margin-bottom: 0;
-  height: 3rem;
-  width: 3rem;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+div.btn {
+  background: #5a8b6a;
+  color: #d6dad7;
+
 }
-
-.avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+div.btn:hover {
+  background: #70a080;
 }
-
-.rounded-circle {
-  border-radius: 50% !important;
-}
-
-.btn.focus,
-.btn:focus {
-  outline: 0;
-  box-shadow: none;
-}
-
-/* Header User Profile */
-
-.avatar-nav {
-  margin-right: 0.6rem;
-  height: 2.2rem;
-  width: 2.2rem;
-}
-
 /* Checkout Steps */

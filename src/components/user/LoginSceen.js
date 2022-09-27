@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const RegisterScreen = () => {
 
@@ -43,26 +44,26 @@ const RegisterScreen = () => {
                     {/*begin::Col*/}
                     <div className="col-md-6">
                       {/*begin::Google link=*/}
-                      <a
-                        href="#"
-                        className="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100"
+                      <Link
+                        to="#"
+                        className="btn btn-flex  btn-outline btn-text-gray-700 btn-active-color-success bg-state-light flex-center text-nowrap w-100"
                       >
                         <i class="fa-brands fa-google"></i>
                         Sign in with Google
-                      </a>
+                      </Link>
                       {/*end::Google link=*/}
                     </div>
                     {/*end::Col*/}
                     {/*begin::Col*/}
-                    <div className="col-md-6">
+                    <div className="col-md-6 ">
                       {/*begin::Google link=*/}
-                      <a
-                        href="#"
-                        className="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100"
+                      <Link
+                        to="#"
+                        className="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-success bg-state-light flex-center text-nowrap w-100"
                       >
                         <i class="fa-brands fa-apple "></i>
                         Sign in with Apple
-                      </a>
+                      </Link>
                       {/*end::Google link=*/}
                     </div>
                     {/*end::Col*/}
@@ -104,43 +105,37 @@ const RegisterScreen = () => {
                   <div className="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">
                     <div />
                     {/*begin::Link*/}
-                    <a
-                      href="/forgetPassword"
-                      className="link-primary"
+                    <Link
+                      to="/forgetPassword"
+                      className="link-success"
                     >
                       Forgot Password ?
-                    </a>
+                    </Link>
                     {/*end::Link*/}
                   </div>
                   {/*end::Wrapper*/}
                   {/*begin::Submit button*/}
-                  <div className="d-grid mb-10">
-                    <button
-                      type="submit"
-                      id="kt_sign_in_submit"
-                      className="btn btn-primary"
+                  <div className="d-grid mb-10 btn ">
+                  
+                    <Link
+                      to="/"
+                      className="link-light"
                     >
-                      {/*begin::Indicator label*/}
-                      <span className="indicator-label">Sign In</span>
-                      {/*end::Indicator label*/}
-                      {/*begin::Indicator progress*/}
-                      <span className="indicator-progress">
-                        Please wait...
-                        <span className="spinner-border spinner-border-sm align-middle ms-2" />
-                      </span>
-                      {/*end::Indicator progress*/}
-                    </button>
+                      Sign in
+                    </Link>
+      
+          
                   </div>
                   {/*end::Submit button*/}
                   {/*begin::Sign up*/}
                   <div className="text-gray-500 text-center fw-semibold fs-6">
                     Not a Member yet?
-                    <a
-                      href="/register"
-                      className="link-primary"
+                    <Link
+                      to="/register"
+                      className="px-5 link-success"
                     >
                       Sign up
-                    </a>
+                    </Link>
                   </div>
                   {/*end::Sign up*/}
                 </form>
@@ -152,28 +147,28 @@ const RegisterScreen = () => {
             {/*begin::Footer*/}
             <div className="d-flex flex-center flex-wrap px-5">
               {/*begin::Links*/}
-              <div className="d-flex fw-semibold text-primary fs-base">
-                <a
-                  href="../../demo1/dist/pages/team.html"
-                  className="px-5"
+              <div className="d-flex fw-semibold  fs-base">
+                <Link
+                  to="#"
+                  className="px-5 link-success"
                   target="_blank"
                 >
                   Terms
-                </a>
-                <a
-                  href="../../demo1/dist/pages/pricing/column.html"
-                  className="px-5"
+                </Link>
+                <Link
+                  to="#"
+                  className="px-5 link-success"
                   target="_blank"
                 >
                   Plans
-                </a>
-                <a
-                  href="../../demo1/dist/pages/contact.html"
-                  className="px-5"
+                </Link>
+                <Link
+                  to="#"
+                  className="px-5 link-success"
                   target="_blank"
                 >
                   Contact Us
-                </a>
+                </Link>
               </div>
               {/*end::Links*/}
             </div>
