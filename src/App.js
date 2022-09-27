@@ -10,6 +10,7 @@ import LoginScreen from './components/user/LoginSceen';
 import RegisterScreen from './components/user/RegisterScreen';
 import ResetPassword from './components/user/ResetPassword';
 import ForgetPassword from './components/user/ForgetPassword'
+import Footer from "./components/pages/Footer";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>,
+      {/* <Footer/> */}
     </div>
   );
 }

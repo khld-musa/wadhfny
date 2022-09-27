@@ -8,10 +8,9 @@ body {
   padding: 0px;
   overflow-x: hidden;
 }
-.App-1 {
-  margin-top: 55px;
+.App {
+  height: 100vh;
 }
-
 /* Avatar */
 div.btn {
   background: #5a8b6a;
@@ -20,5 +19,13 @@ div.btn {
 }
 div.btn:hover {
   background: #70a080;
+}
+
+.form {
+  background: #5a8b6a;
+}
+
+.form-1 {
+  border-radius: 12px;
 }
 /* Checkout Steps */

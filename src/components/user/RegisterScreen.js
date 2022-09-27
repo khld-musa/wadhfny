@@ -7,20 +7,17 @@ const RegisterScreen = () => {
     return (
         <body data-kt-name="metronic" id="kt_body" class="app-blank app-blank">
 
-            {/* <MetaData title={'Register User'} /> */}
-
-            <div className="d-flex flex-column flex-root" id="kt_app_root">
                 {/*begin::Authentication - Sign-up */}
-                <div className="d-flex flex-column flex-lg-row flex-column-fluid">
+                <div className="form d-flex flex-column flex-lg-row flex-column-fluid">
                     {/*begin::Body*/}
                     <div className="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-2 order-lg-1">
                         {/*begin::Form*/}
                         <div className="d-flex flex-center flex-column flex-lg-row-fluid">
                             {/*begin::Wrapper*/}
-                            <div className="w-lg-500px p-10">
+                            <div className="w-lg-500px p-10 bg-light form-1">
                                 {/*begin::Form*/}
                                 <form
-                                    className="form w-100"
+                                    className="w-100"
                                     noValidate="novalidate"
                                     id="kt_sign_up_form"
                                     data-kt-redirect-url="../../demo1/dist/authentication/layouts/corporate/sign-in.html"
@@ -146,7 +143,7 @@ const RegisterScreen = () => {
                                             />
                                             <span className="form-check-label fw-semibold text-gray-700 fs-base ms-1">
                                                 I Accept the
-                                                <Link to="#" className="ms-1 link-success">
+                                                <Link to="/" className="ms-1 link-success">
                                                     Terms
                                                 </Link>
                                             </span>
@@ -181,45 +178,8 @@ const RegisterScreen = () => {
                             </div>
                             {/*end::Wrapper*/}
                         </div>
-                        {/*end::Form*/}
-                        {/*begin::Footer*/}
-                        <div className="d-flex flex-center flex-wrap px-5">
-                            {/*begin::Links*/}
-                            <div className="d-flex fw-semibold text-success fs-base">
-                                <Link
-                                    to="#"
-                                    className="px-5"
-                                    target="_blank"
-                                >
-                                    Terms
-                                </Link>
-                                <Link
-                                    to="#"
-                                    className="px-5"
-                                    target="_blank"
-                                >
-                                    Plans
-                                </Link>
-                                <Link
-                                    to="#"
-                                    className="px-5"
-                                    target="_blank"
-                                >
-                                    Contact Us
-                                </Link>
-                            </div>
-                            {/*end::Links*/}
-                        </div>
-                        {/*end::Footer*/}
                     </div>
-                    {/*end::Body*/}
-                    {/*begin::Aside*/}
-
-                    {/*end::Aside*/}
-                </div>
-                {/*end::Authentication - Sign-up*/}
-            </div>
-
+                 </div>
         </body>
     )
 }

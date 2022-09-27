@@ -1,6 +1,5 @@
 import React from 'react'
 import NavBar from '../NavBar/NavBar';
-import Footer from '../pages/Footer';
 import Header from '../pages/Header';
 import Section from '../pages/Section';
 
@@ -12,7 +11,6 @@ function HomeScren() {
 
 <Header />
 <Section/>
-<Footer/>
     </body>
   )
 }
