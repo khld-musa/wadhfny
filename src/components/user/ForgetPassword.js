@@ -54,13 +54,19 @@ function ForgetPassword() {
                 className="btn btn-primary me-4"
               >
                 {/*begin::Indicator label*/}
-                <span className="indicator-label">Submit</span>
+                <span className="indicator-label">               <a
+                href="/passwordReset"
+                className="text-light"
+              >
+                Submit
+              </a></span>
                 {/*end::Indicator label*/}
                 {/*begin::Indicator progress*/}
                 <span className="indicator-progress">
                   Please wait...
                   <span className="spinner-border spinner-border-sm align-middle ms-2" />
                 </span>
+ 
                 {/*end::Indicator progress*/}
               </button>
               <a
