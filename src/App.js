@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 import './App.css';
 import "./components/assets/css/style.bundle.css"
-import "./components/assets/plugins/global/plugins.bundle.css"
 import HomeScreen from './components/home/HomeScren';
 import LoginScreen from './components/user/LoginSceen';
 import RegisterScreen from './components/user/RegisterScreen';
