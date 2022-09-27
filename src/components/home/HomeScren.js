@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from '../NavBar/NavBar';
+import NavBar from '../pages/NavBar';
 import Header from '../pages/Header';
 import Section from '../pages/Section';
 
@@ -8,9 +8,9 @@ function HomeScren() {
     <body>
 
       <NavBar />
+      <Header />
+      <Section />
 
-<Header />
-<Section/>
     </body>
   )
 }
